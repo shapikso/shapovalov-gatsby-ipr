@@ -2,7 +2,7 @@ import axios from "axios";
 import {getAccessToken} from "./sessionStorageServices";
 
 const marketplace = axios.create({
-    baseURL: 'http://localhost:5000'
+    baseURL: process.env.GATSBY_API_SERVER as string
 });
 
 marketplace.interceptors.request.use((request) => {

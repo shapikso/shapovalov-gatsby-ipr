@@ -5,7 +5,6 @@ import Products from '../components/Products/Products';
 import {ROLE_CUSTOMER} from "../constants/userRoles";
 
 const IndexPage: React.FC<PageProps> = () => {
-    console.log(process.env.GATSBY_GOOGLE_ID)
   return (
       <MainLayout>
         <Products role={ROLE_CUSTOMER}/>
