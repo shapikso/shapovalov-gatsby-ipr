@@ -1,0 +1,52 @@
+@import 'src/constants/colors';
+@import 'src/styles/styles';
+
+.sortWrapper {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    align-items: center;
+    max-width: 308px;
+    width: 100%;
+    @media screen and (max-width: 376px) {
+        max-width: 100%;
+    }
+
+}
+.dropDown {
+    width: 100%;
+    max-width: 226px;
+    height: 36px;
+    background: $white_color;
+    border: 1px solid $border_form_color;
+    border-radius: 4px;
+    @media screen and (max-width: 376px) {
+        max-width: 222px;
+    }
+}
+.menu {
+    padding: 4px 0;
+    border: 1px solid $border_form_color;
+    border-radius: 4px;
+    color: $text_headline_color;
+    max-height: 600px;
+}
+.iconWrapper {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+}
+.filterButton {
+    display: none;
+    cursor: pointer;
+    @media screen and (max-width: 376px) {
+        background: $white_color;
+        border: 1px solid $border_form_color;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 36px;
+        height: 36px;
+    }
+}

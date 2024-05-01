@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-test",
+  "name": "gatsby-ipr-shapovalov",
   "version": "1.0.0",
   "private": true,
   "description": "gatsby-test",
@@ -16,17 +16,33 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@gatsbyjs/reach-router": "^2.0.1",
+    "@react-oauth/google": "^0.12.1",
+    "aws-sdk": "^2.1605.0",
+    "axios": "^1.6.8",
+    "formik": "^2.4.5",
     "gatsby": "^5.13.3",
     "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-react-svg": "^3.3.0",
     "gatsby-plugin-sass": "^6.13.1",
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
+    "jwt-decode": "^4.0.0",
+    "prop-types": "^15.8.1",
+    "rc-slider": "^10.5.0",
+    "rc-tooltip": "^6.2.0",
+    "rc-util": "^5.39.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.72.0"
+    "react-dropdown": "^1.11.0",
+    "react-paginate": "^8.2.0",
+    "react-toastify": "^10.0.5",
+    "sass": "^1.72.0",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
+    "@types/jwt-decode": "^3.1.0",
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",

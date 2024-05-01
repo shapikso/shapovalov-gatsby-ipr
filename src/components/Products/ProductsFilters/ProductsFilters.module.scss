@@ -1,0 +1,70 @@
+@import 'src/constants/colors';
+@import 'src/styles/styles';
+
+.filterWrapper {
+    margin-top: 30px;
+    min-width: 258px;
+    background: $white_color;
+    border: 1px solid $border_form_color;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: $text_headline_color;
+    font-size: 18px;
+    & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 16px;
+        @media screen and (max-width: 376px) {
+            gap: 10px;
+        }
+    }
+    @include displayNone;
+}
+.categoryWrapper {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.railStyle {
+    background: $primary_color;
+}
+.rangeWrapper {
+    margin-top: 20px;
+    @media screen and (max-width: 376px) {
+        margin-top: 40px;
+        margin-bottom: 3px;
+    }
+}
+
+.showFilters {
+    display: flex;
+    position: fixed;
+    max-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 40px;
+    border-radius: 0;
+    padding: 21px 20px 20px 19px;
+    z-index: 1;
+}
+
+.titleWrapper.noFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    svg {
+      display: none;
+      cursor: pointer;
+    }
+    @media screen and (max-width: 376px) {
+        svg {
+           display: block;
+        }
+    }
+}

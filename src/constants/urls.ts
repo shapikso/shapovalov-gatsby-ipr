@@ -1,0 +1,17 @@
+export const USERS_LINK = '/users';
+export const SESSION_LINK = '/sessions';
+export const DASHBOARD_LINK = '/dashboard';
+export const PRODUCTS_LINK = '/';
+export const PROFILE_LINK = '/profile';
+export const EDIT_LINK = '/edit-product';
+export const DETAILS_LINK = '/details';
+export const ME_LINK = '/me';
+export const ADD_LINK = '/add-product';
+export const COMMENTS_LINK = '/comments';
+export const IMAGES_LINK = '/image-upload';
+export const IMAGE_LINK = '/image';
+export const AVATAR_LINK = '/avatar';
+export const PRODUCT_PAGE = '/product';
+export const SINGLE_PRODUCT_LINK_REQUEST = '/single-product';
+export const PRODUCTS_FILTERS_REQUEST = '/filters';
+export const PRODUCTS_LINK_REQUEST = '/products';

@@ -1,0 +1,27 @@
+@import 'src/constants/colors';
+
+.pagination {
+  margin: 30px auto 30px auto;
+  display: flex;
+  gap: 8px;
+  list-style-type: none;
+  justify-content: center;
+  font-size: 13px;
+}
+.pageItem {
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  &[class*="disabled"]{
+    cursor: not-allowed;
+    opacity: 0.5
+  }
+}
+.active {
+  background: $primary_color;
+  color: $white_color;
+}

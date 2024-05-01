@@ -1,0 +1,148 @@
+@import 'src/constants/colors';
+@import 'src/styles/styles';
+
+.detailsPageWrapper {
+    margin-top: 30px;
+    margin-right: 11px;
+    background: $white_color;
+    border: 1px solid $border_form_color;
+    border-radius: 20px;
+    padding: 20px;
+}
+.photoBlock {
+    display: flex;
+    gap: 24px;
+}
+.mainBlock {
+    display: flex;
+    gap: 24px;
+    font-size: 13px;
+    color: $text_headline_color;
+    margin-bottom: 48px;
+    @media screen and (max-width: 376px) {
+        flex-direction: column;
+    }
+}
+.singlePhoto {
+    max-width: 386px;
+    max-height: 353px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $border_form_color;
+    border-radius: 10px;
+    padding: 10px;
+    img {
+        object-fit: contain;
+        width: 100%;
+    }
+}
+.smallPhotos {
+    display: flex;
+    flex-direction: column;
+    min-width: 96px;
+    gap: 8px;
+    img {
+        height: 96px;
+        padding: 10px;
+        max-width: 100%;
+        object-fit: contain;
+        cursor: pointer;
+    }
+}
+.activeImage {
+    border: 1px solid $primary_color;
+    background: $primary_color_transparent;
+    border-radius: 10px;
+}
+.informationBlock {
+    min-height: 353px;
+    max-width: 530px;
+    width: 100%;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.categoryWrapper {
+    display: flex;
+    gap: 32px;
+    div {
+        display: flex;
+        gap: 8px;
+        .grey {
+            color: $grey_color;
+        }
+    }
+    @media screen and (max-width: 376px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.personalInfoWrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 32px;
+    height: 32px;
+    svg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+.descriptionWrapper {
+    color: $grey_color;
+    margin-top: 12px;
+    overflow-wrap: break-word;
+}
+.reviewsWrapper {
+    margin-top: 2px;
+    margin-left: 2px;
+    display: flex;
+    gap: 4px;
+    p {
+        margin-left: 10px;
+        margin-top: -1px;
+    }
+}
+.buttonWrapper {
+    margin-top: 21px;
+    max-width: 117px;
+    width: 100%;
+    button {
+        height: 40px;
+        padding: 10px 20px;
+    }
+}
+
+.commentArea {
+    margin-top: 24px;
+    width: 100%;
+    resize: none;
+    height: 64px;
+    background: $white_color;
+    border: 1px solid $border_input_color;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.reviewButtonWrapper {
+    margin-top: 5px;
+    max-width: 74px;
+    margin-bottom: 7px;
+    button{
+        height: 40px;
+    }
+}
+.reviewsBlock {
+    position: relative;
+}
+.yellowStar {
+    color: $star_color;
+    cursor: pointer;
+}
+.greyStar {
+    color: $grey_color;
+    cursor: pointer;
+}

@@ -1,0 +1,15 @@
+@import 'src/constants/colors';
+.tittle {
+    font-size: 36px;
+    line-height: 44px;
+    color: $text_headline_color;
+    @media screen and (max-width: 376px) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+.medium {
+    font-size: 20px;
+    line-height: 24px;
+}

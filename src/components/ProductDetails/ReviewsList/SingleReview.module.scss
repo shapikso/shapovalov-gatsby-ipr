@@ -1,0 +1,53 @@
+@import 'src/constants/colors';
+@import 'src/styles/styles';
+
+.singleReviewWrapper {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    padding: 24px 0;
+    border-bottom: 1px solid $border_form_color;
+    font-size: 13px;
+    color: $text_headline_color;
+}
+.personalInfoWrapper{
+    width: 32px;
+    height: 32px;
+    img {
+        width: 32px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+.mainInfo {
+    margin-top: 1px;
+    width: calc(100% - 32px);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.topPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.infoWrapper {
+    display: flex;
+    gap: 27px;
+    @media screen and (max-width: 376px) {
+        gap: 5px;
+    }
+}
+.descriptionWrapper {
+    color: $grey_color;
+    overflow-wrap: break-word;
+}
+.stars {
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    @media screen and (max-width: 376px) {
+        gap: 0;
+    }
+}

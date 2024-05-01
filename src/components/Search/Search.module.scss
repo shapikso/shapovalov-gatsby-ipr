@@ -1,0 +1,19 @@
+@import 'src/styles/styles';
+.header {
+    height: 70px;
+    display: flex;
+}
+
+.inputWrapper {
+    position: relative;
+    max-width: 358px;
+    width: 100%;
+    @include displayNone;
+}
+
+.iconWrapper {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+}
+

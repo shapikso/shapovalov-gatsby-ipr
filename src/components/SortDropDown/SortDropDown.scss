@@ -1,0 +1,14 @@
+@import 'src/constants/colors';
+
+.Dropdown-menu {
+  top: 115%;
+  border-radius: 4px;
+  & :hover {
+    background: $active_color;
+    color: $primary_color;
+  }
+  & .is-selected {
+    background: $active_color;
+    color: $primary_color;
+  }
+}

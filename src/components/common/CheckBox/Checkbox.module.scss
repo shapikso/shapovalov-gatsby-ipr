@@ -1,0 +1,30 @@
+@import 'src/constants/colors';
+
+.checkboxWrapper {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.customCheck {
+  margin: auto 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $border_form_color;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  color: transparent;
+  svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.checked {
+  background-color: $primary_color;
+  border-color: $primary_color;
+  color: $white_color;
+}

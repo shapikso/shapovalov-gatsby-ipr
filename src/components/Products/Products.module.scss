@@ -1,0 +1,76 @@
+@import '../../constants/colors';
+@import 'src/styles/styles';
+
+.form {
+    @include form;
+};
+
+.productWrapper {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 376px) {
+        margin-top: 16px;
+    }
+};
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.buttonWrapper {
+    max-width: 122px;
+    width: 100%;
+}
+
+.inputWrapper {
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+};
+
+.iconWrapper {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    bottom: 27px;
+    right: 13px;
+    cursor: pointer;
+}
+.itemList {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    @media screen and (max-width: 376px) {
+        gap: 0;
+    }
+
+}
+.withSearch {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    p {
+        color: $grey_color;
+        font-size: 13px;
+    }
+}
+.provider {
+    margin-left: -24px;
+    @media screen and (max-width: 376px) {
+        margin-left: 0;
+    }
+}
+.topPart {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 12px;
+    @media screen and (max-width: 376px) {
+        gap: 16px;
+        flex-direction: column;
+        padding-right: 0;
+    }
+}
+

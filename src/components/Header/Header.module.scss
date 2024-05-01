@@ -1,0 +1,63 @@
+@import 'src/constants/colors';
+@import 'src/styles/styles';
+$width: calc(100% - 252px);
+.header {
+    height: 70px;
+    display: flex;
+}
+
+.topMenu  {
+   display: flex;
+   gap: 4px;
+    @media screen and (max-width: 376px) {
+        gap: 0;
+        & :last-child{
+            margin-right: 2px;
+        }
+        button {
+            width: 48px;
+            padding: 0;
+        }
+    }
+}
+.sideBar {
+    max-width: 252px;
+    width: 100%;
+    height: 100%;
+    background: $text_headline_color;
+    padding: 16px 20px 0 50px;
+    h1 {
+        color: $white-color;
+        font-size: 25px;
+    }
+    //@include displayNone;
+};
+.rightPart {
+    height: 100%;
+    background: $white_color;
+    box-shadow: 0 10px 20px rgba(18, 38, 63, 0.0313726);;
+    padding-left: 48px;
+    padding-right: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $width;
+    @media screen and (max-width: 376px) {
+        width: 100%;
+        align-items: center;
+        padding: 0 9px 0 16px;
+        button {
+            font-size: 0;
+        }
+    }
+}
+.burgerWrapper {
+    display: none;
+    align-items: center;
+    height: 100%;
+    @media screen and (max-width: 376px) {
+        cursor: pointer;
+        display: flex;
+    }
+
+}
